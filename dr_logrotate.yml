@@ -12,7 +12,7 @@
        #age: 3600
        #age: 2d
        #age: 4w
-        recurse: yes
+        #recurse: yes
       register: logdetails
        recurse: yes
      
