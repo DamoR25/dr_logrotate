@@ -6,7 +6,7 @@
     - name: Recursively find /.log files older than 1hour or 2 day or 4 weeks  
       find:
        paths: /var/log
-       patterns: '*.log.gz'
+       patterns: '*.log'
        age: 60
        #age: 3600
        #age: 2d
