@@ -11,6 +11,7 @@
        #age: 3600
        #age: 2d
        #age: 4w
+       register: logdetails
        recurse: yes
      
     - name: Print the script result
