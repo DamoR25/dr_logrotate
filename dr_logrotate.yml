@@ -7,7 +7,8 @@
       find:
        paths: /var/log
        patterns: '*.log.gz'
-       age: 3600
+       age: 60
+       #age: 3600
        #age: 2d
        #age: 4w
        recurse: yes
