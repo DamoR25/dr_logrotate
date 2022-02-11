@@ -3,7 +3,7 @@
   hosts: 169.57.13.100
   
   tasks:
-    - name: Recursively find /tmp files older than 1hour or 2 day or 4 weeks  
+    - name: Recursively find /.log files older than 1hour or 2 day or 4 weeks  
       find:
        paths: /var/log
        patterns: '*.log.gz'
@@ -11,3 +11,7 @@
        #age: 2d
        #age: 4w
        recurse: yes
+     
+    - name: Print the script result
+      debug:
+        msg: "{{ logdetails.stdout }}" 
